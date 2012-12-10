@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the GSB Feature Event feature.
+ */
+
+include_once 'gsb_feature_event.features.inc';

@@ -7,6 +7,7 @@ project = gsb_feature_event
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = entityreference
+dependencies[] = entity_view_mode
 dependencies[] = features
 dependencies[] = field_collection
 dependencies[] = file

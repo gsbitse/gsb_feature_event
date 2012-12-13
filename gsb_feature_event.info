@@ -6,6 +6,7 @@ version = 7.x-1.0-beta1
 project = gsb_feature_event
 dependencies[] = ctools
 dependencies[] = date
+dependencies[] = email
 dependencies[] = entityreference
 dependencies[] = entity_view_mode
 dependencies[] = features

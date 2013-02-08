@@ -30,6 +30,17 @@ function gsb_feature_event_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Event Image */
+  $handler->display->display_options['fields']['field_event_image']['id'] = 'field_event_image';
+  $handler->display->display_options['fields']['field_event_image']['table'] = 'field_data_field_event_image';
+  $handler->display->display_options['fields']['field_event_image']['field'] = 'field_event_image';
+  $handler->display->display_options['fields']['field_event_image']['label'] = '';
+  $handler->display->display_options['fields']['field_event_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_event_image']['settings'] = array(
+    'image_style' => 'gsb_image_small',
+    'image_link' => '',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -37,6 +48,14 @@ function gsb_feature_event_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '150';
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -82,7 +101,6 @@ function gsb_feature_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_test_vocab_1_tid']['id'] = 'field_event_test_vocab_1_tid';
   $handler->display->display_options['filters']['field_event_test_vocab_1_tid']['table'] = 'field_data_field_event_test_vocab_1';
   $handler->display->display_options['filters']['field_event_test_vocab_1_tid']['field'] = 'field_event_test_vocab_1_tid';
-  $handler->display->display_options['filters']['field_event_test_vocab_1_tid']['operator'] = 'and';
   $handler->display->display_options['filters']['field_event_test_vocab_1_tid']['value'] = '';
   $handler->display->display_options['filters']['field_event_test_vocab_1_tid']['group'] = 2;
   $handler->display->display_options['filters']['field_event_test_vocab_1_tid']['exposed'] = TRUE;
@@ -102,7 +120,6 @@ function gsb_feature_event_views_default_views() {
   $handler->display->display_options['filters']['field_event_test_vocab_2_tid']['id'] = 'field_event_test_vocab_2_tid';
   $handler->display->display_options['filters']['field_event_test_vocab_2_tid']['table'] = 'field_data_field_event_test_vocab_2';
   $handler->display->display_options['filters']['field_event_test_vocab_2_tid']['field'] = 'field_event_test_vocab_2_tid';
-  $handler->display->display_options['filters']['field_event_test_vocab_2_tid']['operator'] = 'and';
   $handler->display->display_options['filters']['field_event_test_vocab_2_tid']['value'] = '';
   $handler->display->display_options['filters']['field_event_test_vocab_2_tid']['group'] = 2;
   $handler->display->display_options['filters']['field_event_test_vocab_2_tid']['exposed'] = TRUE;

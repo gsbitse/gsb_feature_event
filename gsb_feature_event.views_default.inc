@@ -41,6 +41,19 @@ function gsb_feature_event_views_default_views() {
     'image_style' => 'gsb_image_small',
     'image_link' => '',
   );
+  /* Field: Content: Event Date */
+  $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['label'] = '';
+  $handler->display->display_options['fields']['field_event_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['settings'] = array(
+    'format_type' => 'long',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -87,7 +100,7 @@ function gsb_feature_event_views_default_views() {
   $handler->display->display_options['filters']['nid']['group'] = 2;
   $handler->display->display_options['filters']['nid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['nid']['expose']['operator_id'] = 'nid_op';
-  $handler->display->display_options['filters']['nid']['expose']['label'] = 'Nid';
+  $handler->display->display_options['filters']['nid']['expose']['label'] = 'Node Id';
   $handler->display->display_options['filters']['nid']['expose']['operator'] = 'nid_op';
   $handler->display->display_options['filters']['nid']['expose']['identifier'] = 'nid';
   $handler->display->display_options['filters']['nid']['expose']['remember_roles'] = array(
@@ -136,8 +149,8 @@ function gsb_feature_event_views_default_views() {
   );
   $handler->display->display_options['filters']['field_event_test_vocab_2_tid']['vocabulary'] = 'event_test_vocab2';
 
-  /* Display: Content pane */
-  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  /* Display: Sidebar */
+  $handler = $view->new_display('panel_pane', 'Sidebar', 'sidebar');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['pane_category']['name'] = 'GSB Content Panes';
   $handler->display->display_options['pane_category']['weight'] = '0';
@@ -150,6 +163,10 @@ function gsb_feature_event_views_default_views() {
   $handler->display->display_options['allow']['title_override'] = 0;
   $handler->display->display_options['allow']['exposed_form'] = 'exposed_form';
   $handler->display->display_options['allow']['fields_override'] = 0;
+
+  /* Display: Front Page */
+  $handler = $view->new_display('block', 'Front Page', 'frontpage');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $export['gsb_event'] = $view;
 
   return $export;

@@ -22,10 +22,10 @@ function gsb_feature_event_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '14',
+          'weight' => '16',
         ),
         'workbench_access' => array(
-          'weight' => '15',
+          'weight' => '17',
         ),
       ),
       'display' => array(),

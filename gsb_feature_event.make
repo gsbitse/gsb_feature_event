@@ -6,6 +6,3 @@ projects[entity_view_mode][subdir] = contrib
 
 projects[field_collection][version] = 1.0-beta5
 projects[field_collection][subdir] = contrib
-
-projects[date_ical][version] = 2.4
-projects[date_ical][subdir] = contrib

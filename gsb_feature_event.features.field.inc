@@ -487,7 +487,7 @@ function gsb_feature_event_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '19',
+        'weight' => '15',
       ),
     ),
   );

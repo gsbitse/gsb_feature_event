@@ -21,15 +21,14 @@ function gsb_feature_event_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Location',
-    'weight' => '7',
+    'weight' => '8',
     'children' => array(
-      0 => 'field_street_address_1',
-      1 => 'field_street_address_2',
-      2 => 'field_street_address_3',
-      3 => 'field_city',
-      4 => 'field_state',
-      5 => 'field_postal_code',
-      6 => 'field_country',
+      0 => 'field_city',
+      1 => 'field_postal_code',
+      2 => 'field_state',
+      3 => 'field_street_address_1',
+      4 => 'field_street_address_2',
+      5 => 'field_street_address_3',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

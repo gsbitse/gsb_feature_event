@@ -62,7 +62,6 @@ features[field][] = node-gsb_event-field_url
 features[field_group][] = group_location|node|gsb_event|form
 features[image][] = gsb_event_168x100
 features[node][] = gsb_event
-features[search_api_index][] = event_index
 features[taxonomy][] = event_test_vocab1
 features[taxonomy][] = event_test_vocab2
 features[variable][] = field_bundle_settings_node__gsb_event

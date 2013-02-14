@@ -13,3 +13,6 @@ projects[field_collection][subdir] = contrib
 projects[date_ical][version] = 2.4	
 projects[date_ical][subdir] = contrib
 
+projects[flag][version] = 2.0 
+projects[flag][subdir] = contrib
+

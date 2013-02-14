@@ -198,7 +198,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'featured' => array(
           'label' => 'above',
@@ -281,7 +281,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => 3,
+          'weight' => '3',
         ),
         'featured' => array(
           'label' => 'above',
@@ -361,7 +361,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 21,
+          'weight' => '21',
         ),
         'featured' => array(
           'label' => 'above',
@@ -451,7 +451,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 24,
+          'weight' => '24',
         ),
         'featured' => array(
           'label' => 'above',
@@ -530,7 +530,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 17,
+          'weight' => '17',
         ),
         'featured' => array(
           'label' => 'above',
@@ -614,14 +614,14 @@ function gsb_feature_event_field_default_fields() {
           'label' => 'above',
           'module' => 'date',
           'settings' => array(
-            'format_type' => 'long',
+            'format_type' => 'medium_time',
             'fromto' => 'both',
             'multiple_from' => '',
             'multiple_number' => '',
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => 14,
+          'weight' => '14',
         ),
         'featured' => array(
           'label' => 'above',
@@ -720,7 +720,7 @@ function gsb_feature_event_field_default_fields() {
             'image_style' => '',
           ),
           'type' => 'image',
-          'weight' => 11,
+          'weight' => '11',
         ),
         'featured' => array(
           'label' => 'above',
@@ -837,7 +837,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 12,
+          'weight' => '12',
         ),
         'featured' => array(
           'label' => 'above',
@@ -923,7 +923,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 13,
+          'weight' => '13',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1005,7 +1005,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => 16,
+          'weight' => '16',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1103,7 +1103,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 5,
+          'weight' => '5',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1188,7 +1188,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 23,
+          'weight' => '23',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1274,7 +1274,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => 15,
+          'weight' => '15',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1368,7 +1368,7 @@ function gsb_feature_event_field_default_fields() {
             'view_mode' => 'full',
           ),
           'type' => 'field_collection_view',
-          'weight' => 8,
+          'weight' => '8',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1440,7 +1440,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => 7,
+          'weight' => '7',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1523,7 +1523,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 22,
+          'weight' => '22',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1604,7 +1604,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 18,
+          'weight' => '18',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1689,7 +1689,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 19,
+          'weight' => '19',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1774,7 +1774,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 20,
+          'weight' => '20',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1860,7 +1860,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'file',
           'settings' => array(),
           'type' => 'file_default',
-          'weight' => 9,
+          'weight' => '9',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1938,7 +1938,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => 6,
+          'weight' => '6',
         ),
         'featured' => array(
           'label' => 'above',
@@ -2016,7 +2016,7 @@ function gsb_feature_event_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 10,
+          'weight' => '10',
         ),
         'featured' => array(
           'label' => 'above',

@@ -5,3 +5,16 @@
  */
 
 include_once 'gsb_feature_event.features.inc';
+
+/**
+ * Implements hook_form_alter().
+ */
+function gsb_feature_event_form_alter(&$form, &$form_state, $form_id) {
+
+  $test = 'test';
+
+  // views_content_views_panes_content_type_edit_form
+  // panopoly_magic_form_alter
+  // /Users/macgmercer/Sites/gsb/gsb_public/profiles/gsb_public/modules/panopoly/panopoly_magic/panopoly_magic.module
+
+}

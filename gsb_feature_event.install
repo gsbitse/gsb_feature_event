@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function gsb_feature_event_install() {
+  // Make the weight of our module one higher than panopoly_magic.
+  $weight = db_select('system', 's')
+              ->fields('s', array('weight'))
+              ->condition('name', 'panopoly_magic', '=')
+              ->execute()
+              ->fetchField();
+
+  db_update('system')
+    ->fields(array('weight' => $weight +1))
+    ->condition('name', 'gsb_feature_event', '=')
+    ->execute();
+}

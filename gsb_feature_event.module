@@ -7,14 +7,31 @@
 include_once 'gsb_feature_event.features.inc';
 
 /**
- * Implements hook_form_alter().
+ * Implementation of hook_form_FORM_ID_alter()
+ *
+ * Provides customizations to the views content type settings form
  */
-function gsb_feature_event_form_alter(&$form, &$form_state, $form_id) {
+function gsb_feature_event_form_views_content_views_panes_content_type_edit_form_alter(&$form, &$form_state, $form_id) {
+  if (isset($form["display_settings"])) {
+    if (isset($form["display_settings"]["view_settings"])) {
+      $form["display_settings"]["view_settings"]['#access'] = FALSE;
+    }
+    if (isset($form["display_settings"]["header_type"])) {
+      $form["display_settings"]["header_type"]['#access'] = FALSE;
+    }    
+  }
+  if (isset($form["content_settings"])) {
+    $form["content_settings"]['#access'] = FALSE;
+  }
+}
 
-  $test = 'test';
-
-  // views_content_views_panes_content_type_edit_form
-  // panopoly_magic_form_alter
-  // /Users/macgmercer/Sites/gsb/gsb_public/profiles/gsb_public/modules/panopoly/panopoly_magic/panopoly_magic.module
-
+/**
+ * Implementation of hook_module_implements_alter()
+ */
+function gsb_feature_event_module_implements_alter(&$implementations, $hook) {
+  if ($hook == 'form_alter') {
+    $group = $implementations['gsb_feature_event'];
+    unset($implementations['gsb_feature_event']);
+    $implementations['gsb_feature_event'] = $group;
+  }
 }

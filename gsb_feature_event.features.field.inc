@@ -76,7 +76,7 @@ function gsb_feature_event_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '2',
+        'weight' => '4',
       ),
     ),
   );
@@ -155,6 +155,222 @@ function gsb_feature_event_field_default_fields() {
         'type' => 'entityreference_autocomplete',
         'weight' => '1',
       ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_speakers-field_speaker_first_name'.
+  $fields['field_collection_item-field_speakers-field_speaker_first_name'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_speaker_first_name',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_speakers',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 2,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_speaker_first_name',
+      'label' => 'Speaker First Name',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'enable' => 0,
+          'insert_plugin' => '',
+        ),
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '2',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_speakers-field_speaker_last_name'.
+  $fields['field_collection_item-field_speakers-field_speaker_last_name'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_speaker_last_name',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_speakers',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 3,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_speaker_last_name',
+      'label' => 'Speaker Last Name',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'enable' => 0,
+          'insert_plugin' => '',
+        ),
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '3',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_speakers-field_speaker_reference'.
+  $fields['field_collection_item-field_speakers-field_speaker_reference'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_speaker_reference',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'UseEntityReference' => 'Faculty or Staff',
+          'Custom' => 'Custom',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_speakers',
+      'default_value' => array(
+        0 => array(
+          'value' => 'EntityReference',
+        ),
+      ),
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => 4,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_speaker_reference',
+      'label' => 'Speaker Reference',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => 0,
+      ),
+      'workbench_access_field' => 0,
     ),
   );
 
@@ -787,7 +1003,7 @@ function gsb_feature_event_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
-        'weight' => '20',
+        'weight' => '12',
       ),
     ),
   );
@@ -1143,7 +1359,7 @@ function gsb_feature_event_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '12',
+        'weight' => '9',
       ),
     ),
   );
@@ -1327,7 +1543,7 @@ function gsb_feature_event_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '25',
+        'weight' => '18',
       ),
     ),
   );
@@ -1401,7 +1617,7 @@ function gsb_feature_event_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => '18',
+        'weight' => '11',
       ),
     ),
   );
@@ -1473,7 +1689,7 @@ function gsb_feature_event_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '16',
+        'weight' => '10',
       ),
     ),
   );
@@ -1899,7 +2115,7 @@ function gsb_feature_event_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
-        'weight' => '21',
+        'weight' => '14',
       ),
     ),
   );
@@ -1912,20 +2128,31 @@ function gsb_feature_event_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_target_audience',
-      'foreign keys' => array(),
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
       'indexes' => array(
-        'value' => array(
-          0 => 'value',
+        'tid' => array(
+          0 => 'tid',
         ),
       ),
       'locked' => '0',
-      'module' => 'list',
+      'module' => 'taxonomy',
       'settings' => array(
-        'allowed_values' => array(),
-        'allowed_values_function' => '',
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'panopoly_categories',
+            'parent' => '0',
+          ),
+        ),
       ),
       'translatable' => '0',
-      'type' => 'list_text',
+      'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
       'bundle' => 'gsb_event',
@@ -1935,10 +2162,10 @@ function gsb_feature_event_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
+          'module' => 'taxonomy',
           'settings' => array(),
-          'type' => 'list_default',
-          'weight' => '6',
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 25,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1950,7 +2177,7 @@ function gsb_feature_event_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '6',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1967,12 +2194,16 @@ function gsb_feature_event_field_default_fields() {
         'user_register_form' => FALSE,
       ),
       'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '14',
+        'active' => 0,
+        'module' => 'taxonomy',
+        'settings' => array(
+          'autocomplete_path' => 'taxonomy/autocomplete',
+          'size' => 60,
+        ),
+        'type' => 'taxonomy_autocomplete',
+        'weight' => '13',
       ),
+      'workbench_access_field' => 0,
     ),
   );
 
@@ -2056,7 +2287,7 @@ function gsb_feature_event_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '22',
+        'weight' => '15',
       ),
     ),
   );
@@ -2078,6 +2309,9 @@ function gsb_feature_event_field_default_fields() {
   t('Postal Code');
   t('Register URL');
   t('Speaker');
+  t('Speaker First Name');
+  t('Speaker Last Name');
+  t('Speaker Reference');
   t('Speakers');
   t('Sponsors');
   t('State');

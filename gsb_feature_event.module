@@ -37,3 +37,30 @@ function gsb_feature_event_module_implements_alter(&$implementations, $hook) {
     }
   }
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter() for user_profile_form().
+ */
+function gsb_feature_event_form_gsb_event_node_form_alter(&$form, &$form_state) {
+
+  $index = 0;
+
+  while (isset($form['field_speakers']['und'][$index])) {
+
+    $form['field_speakers']['und'][$index]['field_speaker']['#states']['visible'][':input[name="field_speakers[und][' . $index . '][field_speaker_reference][und]"]'] = array(
+      array('value' => 'UseEntityReference'),
+    );
+
+    $form['field_speakers']['und'][$index]['field_speaker_first_name']['#states']['visible'][':input[name="field_speakers[und][' . $index . '][field_speaker_reference][und]"]'] = array(
+      array('value' => 'Custom'),
+    );
+
+    $form['field_speakers']['und'][$index]['field_speaker_last_name']['#states']['visible'][':input[name="field_speakers[und][' . $index . '][field_speaker_reference][und]"]'] = array(
+      array('value' => 'Custom'),
+    );
+
+    $index++;
+
+  }
+
+}
